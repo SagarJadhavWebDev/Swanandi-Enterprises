@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+<title>Reverse Geocoding</title> 
+<style type="text/css">
+{
+margin:0;
+padding:0;
+font-family: Poppins;
+box-sizing: border-box;
+}
+body{
+margin:0;
+padding:0;
+font-family: Poppins;
+box-sizing: border-box;
+}
+.logo{
+height:3rem;
+width:3rem;
+}
+#myCarousel{
+height:60% !importent;
+}
+@keyframes pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+.h{
+    animation: pulse 1s linear infinite;
+}
+.what{
+    position: fixed;
+    bottom: 2em;
+    right: 0.5rem;
+    font-size:4rem;
+    text-decoration: none;
+    padding:1rem;
+    height:5.4rem;
+    width:5.4rem;
+
+
+}
+.ci{
+object-fit:cover;
+width:100%;
+height:14rem !important;
+}
+a{
+text-decoration:none;
+}
+a:hover{
+text-decoration: none;
+}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<header class="text-gray-700  body-font">
+  <div class="container mt-4   flex flex-wrap flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+    <img class="logo" src="https://raw.githubusercontent.com/SagarJadhavWebDev/COVID-19/master/download.png">
+      <span class="ml-3 text-xl"><b>Swanandi Enterprises</b></span>
+    </a>
+    <nav class="w3-hide-small w3-hide-medium md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900">Contact us</a>
+      <a class="mr-5 hover:text-gray-900">About us</a>
+      <a class="mr-5 hover:text-gray-900">Business</a>
+      <a class="mr-5 hover:text-gray-900">Investors</a>
+    </nav>
+
+  </div>
+
+
+<div id="myCarousel" class=" w3-red mb-5 carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="ci" src="https://raw.githubusercontent.com/SagarJadhavWebDev/Swanandi-Enterprises/master/IMG_20200709_120828.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img class="ci" src="https://raw.githubusercontent.com/SagarJadhavWebDev/Swanandi-Enterprises/master/IMG_20200709_120839.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img class="ci" src="https://raw.githubusercontent.com/SagarJadhavWebDev/Swanandi-Enterprises/master/IMG_20200709_120853.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+</div>
+</header>
+<section class="text-gray-700  body-font">
+
+  <div class="container mx-auto  flex p-5 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+        <br class="hidden lg:inline-block">readymade gluten
+      </h1>
+      <p class="mb-8 leading-relaxed">
+      Invitation is the key to our long standing leadership at the heart of everything se do is an unwavering commitment to satisfy the demands of our customers by devloping products that are cost effective and the top quality
+      </p>
+      <div class="flex justify-center">
+       <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">About Us</button>
+        <a href="tel: +917039384232"><button class="ml-4 inline-flex bg-gray-300 text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-400 rounded text-lg">Call Us</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-gray-700 bg-gray-800 w3-text-white body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+    <img class="logo" src="https://raw.githubusercontent.com/SagarJadhavWebDev/COVID-19/master/download.png">
+
+
+      <span class="ml-3 w3-text-white text-xl">Swanandi Enterprises</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Swanandi Enterprises —
+      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@SEnterprises</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+<img class="what h w3-large w3-round-xxlarge" src="https://image.flaticon.com/icons/svg/1534/1534509.svg">
+</body>
+</html>
